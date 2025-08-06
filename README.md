@@ -2,6 +2,11 @@
 
 This project simulates a complete **production-grade DevOps pipeline** that covers the entire software delivery lifecycle, with a focus on **automation, scalability, and security**. It integrates modern DevOps tools and practices such as **IaC, CI/CD, GitOps, and DevSecOps**, aligned with industry standards.
 
+## Application Pipeline
+![Application-Pipeline](./assets/advance-devops-project.gif)
+
+## EKS Deployment
+![EKS-Deployment](./assets/iac.mp4.gif)
 ---
 
 ## 🚀 Project Highlights
@@ -20,7 +25,7 @@ This project simulates a complete **production-grade DevOps pipeline** that cove
 **Provisioned via Terraform:**
 - VPC with public/private subnets
 - Internet Gateway, NAT Gateway
-- Security Groups & Route Tables
+- Security Groups & Public/Private Route Tables
 - Amazon EKS Cluster (private subnet)
 - Amazon RDS (MySQL)
 - EC2 Worker Nodes
@@ -47,7 +52,8 @@ This project simulates a complete **production-grade DevOps pipeline** that cove
 - Secrets management via GitLab variables, Ansible Vault, and Kubernetes Secrets
 - Static analysis using **Semgrep (SAST)**
 - Container image scanning using **Trivy**
-- Secrets detection and code quality enforcement
+- Secrets Detection using **Trivy**
+- Code quality/linting enforcement
 
 ---
 
@@ -56,7 +62,7 @@ This project simulates a complete **production-grade DevOps pipeline** that cove
 - **Ansible AWX** deployed in local Kubeadm cluster
 - Used to deploy:
   - ArgoCD in Dev & Prod EKS clusters
-  - ALB Controller
+  - ALB Controller in Dev & Prod EKS clusters
 - Integrated GitLab CI with AWX using webhooks
 
 ---
@@ -74,7 +80,7 @@ This project simulates a complete **production-grade DevOps pipeline** that cove
 
 ## 🔁 GitOps Workflow with ArgoCD
 
-- ArgoCD pulls manifests from GitHub repos
+- ArgoCD pulls manifests from Gitlab Repos
 - Syncs resources to respective EKS clusters using Kustomize
 - Enables safe, auditable, and automated deployments to **Dev and Prod** environments
 
@@ -82,7 +88,7 @@ This project simulates a complete **production-grade DevOps pipeline** that cove
 
 ## 🧠 Key Outcomes
 
-- Simulated a **real-world SaaS pipeline**
+- Simulated a **real-world SaaS pipeline** which use Trunk based approach to deploy application
 - Integrated critical DevOps components for **automation**, **security**, and **resilience**
 - Demonstrated practical use of **Terraform**, **Ansible AWX**, **Docker**, **Kubernetes**, **GitLab CI**, and **ArgoCD**
 
@@ -99,6 +105,6 @@ This repository is for demonstration/documentation purposes only and **does not 
 Feel free to connect:
 
 - **Email**: saadzahid248@gmail.com  
-- **LinkedIn**: [linkedin.com/in/saadzahid248](https://linkedin.com/in/saadzahid248)
+- **LinkedIn**: [linkedin.com/in/saad-zahid11](https://www.linkedin.com/in/saad-zahid11/)
 
 ---
